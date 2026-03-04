@@ -18,6 +18,8 @@ W_FINAL, H_FINAL = 354, 472
 
 # Yuzni aniqlash uchun kaskad yuklash (OpenCV bilan birga keladi)
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+if face_cascade.empty():
+    face_cascade = cv2.CascadeClassifier(cv2.samples.findFile('haarcascades/haarcascade_frontalface_default.xml'))
 
 @dp.message_handler(commands=['start'])
 async def start(message: types.Message):
