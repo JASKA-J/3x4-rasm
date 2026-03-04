@@ -8,7 +8,7 @@ from rembg import remove
 from PIL import Image
 
 # 1. BOT TOKENINGIZNI KIRITING
-TOKEN = "SIZNING_TELEGRAM_TOKENINGIZ"
+TOKEN = "8798419136:AAFH_K2EjKVs9KGvG7sinITgUspu64bGGXs"
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
