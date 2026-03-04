@@ -3,4 +3,4 @@ rembg
 Pillow
 requests
 opencv-python-headless
-numpy
+numpy==1.26.4
